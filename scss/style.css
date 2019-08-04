@@ -1,0 +1,170 @@
+.one, .two, .three, .form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#img {
+  overflow: hidden;
+  background-size: cover;
+  height: 105vh;
+}
+
+.one, .two, .three {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.three input {
+  width: 130px;
+  height: 20px;
+  border: 1px solid red;
+}
+
+.three button {
+  border: 1px solid red;
+  width: 30px;
+  height: 20px;
+}
+
+.three button img {
+  width: 10px;
+}
+
+#social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: black;
+}
+
+#social-media span {
+  color: white;
+}
+
+#first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#logo img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-top: 30px;
+}
+
+#container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#container ul li {
+  list-style: none;
+  font-size: 17px;
+}
+
+#container ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+#cont {
+  background-image: url("../img/gray.jpg");
+  background-size: cover;
+}
+
+footer {
+  background-color: black;
+}
+
+#rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.us {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.us img {
+  width: 120px;
+}
+
+.map {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.map p {
+  color: white;
+}
+
+.form {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.form ul li {
+  margin: 5px;
+  color: white;
+}
+
+.form ul li input {
+  font-size: 15px;
+}
+
+.form input[type="submit"], .form input[type="reset"] {
+  margin: 2px;
+  width: 80px;
+  height: 25px;
+  border: 2px solid black;
+  background: white;
+}
+/*# sourceMappingURL=style.css.map */

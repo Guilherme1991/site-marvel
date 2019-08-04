@@ -1,0 +1,130 @@
+$header-img: url('../img/img-1.jpg');
+$-flex: flex;
+$-family: 'Courier New', Courier, monospace;
+%flex-center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $-family;
+}
+body{
+}
+#img{
+    overflow: hidden;
+    background-size: cover;
+    height: 105vh;
+}
+.one,.two,.three{
+flex: 2;
+@extend %flex-center;
+}
+.three{
+    input{
+        @include size(130px, 20px); 
+        border: 1px solid red;
+    }
+    button{
+        border: 1px solid red;
+        @include size(30px, 20px);
+        img{
+        width: 10px;
+        }
+    }
+}
+#social-media{
+    display: $-flex;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    background: black;
+    span{
+        color: white;
+    }
+}
+header{
+
+}
+#first{
+    display: $-flex;
+}
+#logo{
+    flex: 2;
+    img{
+        width: 100px;
+        margin: 10px;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+}
+#container{
+    flex: 3;
+    margin-top: 30px;
+    ul{
+        display: $-flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            font-size: 17px;
+            a{
+                display: flex;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+section{
+    
+}
+#cont{
+    background-image: url('../img/gray.jpg');
+    background-size: cover;
+}
+footer{
+  background-color: black;
+}
+#rodape{
+    display: $-flex;
+    flex-wrap: wrap;
+}
+.us{
+    flex: 3;
+    img{
+        width: 120px;
+    }
+}
+.map{
+    flex: 3;
+    p{
+        color: white;
+    }
+}
+.form{
+    @extend %flex-center;
+    flex: 3;
+    ul{
+        li{
+            margin: 5px;
+            color: white;
+            input{
+                font-size: 15px;
+            }
+        }
+    }
+    input[type="submit"], input[type="reset"]{
+        margin: 2px;
+        @include size(80px, 25px);
+        border: 2px solid rgb(0, 0, 0);
+        background: white;
+     }
+}
